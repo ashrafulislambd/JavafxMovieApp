@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="245.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lab4.CardController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <ImageView fitHeight="226.0" fitWidth="223.0" pickOnBounds="true">
+         <image>
+            <Image url="@thumb.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTitle" text="How to train your dragon">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label text="2025" textFill="#a8a8a8">
+         <VBox.margin>
+            <Insets top="-10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <TilePane hgap="10.0" prefHeight="39.0" prefWidth="225.0" vgap="10.0">
+         <children>
+            <Label style="-fx-background-color: #AAAAAA; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Fantasy">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label style="-fx-background-color: #AAAAAA; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Family">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label style="-fx-background-color: #AAAAAA; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Action">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+         </children>
+      </TilePane>
+      <HBox prefHeight="43.0" prefWidth="225.0" spacing="10.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="103.0" text="⭐ 8.0">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Label>
+            <Region prefHeight="37.0" prefWidth="78.0" />
+            <Label prefHeight="17.0" prefWidth="59.0" text="35 votes" textFill="#9f9f9f">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
