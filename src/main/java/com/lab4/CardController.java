@@ -5,6 +5,7 @@ import java.sql.ResultSet;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 public class CardController {
@@ -20,6 +21,9 @@ public class CardController {
 
         if(rs.next()) {
             String title = rs.getString("TITLE");
+            String imgPath = rs.getString("IMG_PATH");
+
+            imgThumbnail.setImage(new Image(getClass().getResourceAsStream(imgPath)));
             lblTitle.setText(title);
         }
     }
