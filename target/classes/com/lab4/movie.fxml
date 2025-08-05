@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -20,6 +21,7 @@
                   <Label text="Movie Browser" />
                   <ToggleButton mnemonicParsing="false" text="ToggleButton" />
                   <Button fx:id="btnConnect" mnemonicParsing="false" onAction="#btnConnect_Click" prefHeight="25.0" prefWidth="130.0" text="Connect" />
+                  <TextField fx:id="txtSearch" onAction="#txtSearch_Change" onInputMethodTextChanged="#txtSearch_Change" prefHeight="25.0" prefWidth="289.0" promptText="Search" />
                </children>
                <VBox.margin>
                   <Insets />
@@ -36,7 +38,7 @@
                   <Insets left="10.0" top="10.0" />
                </VBox.margin>
             </Label>
-            <ScrollPane prefHeight="277.0" prefWidth="600.0">
+            <ScrollPane prefHeight="1000.0" prefWidth="600.0">
                <content>
                   <TilePane fx:id="tileMovies" hgap="10.0" prefColumns="3" prefHeight="269.0" prefWidth="889.0" vgap="10.0">
                      <padding>
